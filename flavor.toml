@@ -32,16 +32,25 @@ border_style = { fg = "#282C34" }  # Darkened background
 
 # : }}}
 
+# : Mode {{{
+[mode]
+
+normal_main = { fg = "#282C34", bg = "#61AFEF", bold = true }  # Dark gray on Blue
+normal_alt = { fg = "#61AFEF", bg = "#282C34", bold = true }  # Blue on Dark gray
+
+select_main = { fg = "#282C34", bg = "#61AFEF", bold = true }  # Dark gray on Blue
+select_alt = { fg = "#61AFEF", bg = "#282C34", bold = true }  # Blue on Dark gray
+
+unset_main = { fg = "#282C34", bg = "#61AFEF", bold = true }  # Dark gray on Blue
+unset_alt = { fg = "#61AFEF", bg = "#282C34", bold = true }  # Blue on Dark gray
+
+# : }}}
+
 # : Status {{{
 [status]
 separator_open = ""
 separator_close = ""
 separator_style = { fg = "#61AFEF", bg = "#282C34" }  # Blue on Darkened background
-
-# Mode
-mode_normal = { fg = "#282C34", bg = "#61AFEF", bold = true }  # Dark gray on Blue
-mode_select = { fg = "#282C34", bg = "#61AFEF", bold = true }  # Dark gray on Blue
-mode_unset = { fg = "#282C34", bg = "#61AFEF", bold = true }  # Dark gray on Blue
 
 # Progress
 progress_label = { fg = "#ABB2BF", bold = true }  # Light gray
