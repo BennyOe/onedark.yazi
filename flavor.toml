@@ -32,16 +32,25 @@ border_style = { fg = "#282C34" }  # Darkened background
 
 # : }}}
 
+# : Mode {{{
+[mode]
+
+normal_main = { fg = "#282C34", bg = "#61AFEF", bold = true }  # Dark gray on Blue
+normal_alt = { fg = "#61AFEF", bg = "#282C34", bold = true }  # Blue on Dark gray
+
+select_main = { fg = "#282C34", bg = "#61AFEF", bold = true }  # Dark gray on Blue
+select_alt = { fg = "#61AFEF", bg = "#282C34", bold = true }  # Blue on Dark gray
+
+unset_main = { fg = "#282C34", bg = "#61AFEF", bold = true }  # Dark gray on Blue
+unset_alt = { fg = "#61AFEF", bg = "#282C34", bold = true }  # Blue on Dark gray
+
+# : }}}
+
 # : Status {{{
 [status]
-separator_open = ""
-separator_close = ""
+sep_left = { open = "", close = "" }
+sep_right = { open = "", close = "" }
 separator_style = { fg = "#61AFEF", bg = "#282C34" }  # Blue on Darkened background
-
-# Mode
-mode_normal = { fg = "#282C34", bg = "#61AFEF", bold = true }  # Dark gray on Blue
-mode_select = { fg = "#282C34", bg = "#61AFEF", bold = true }  # Dark gray on Blue
-mode_unset = { fg = "#282C34", bg = "#61AFEF", bold = true }  # Dark gray on Blue
 
 # Progress
 progress_label = { fg = "#ABB2BF", bold = true }  # Light gray
@@ -49,11 +58,11 @@ progress_normal = { fg = "#98C379", bg = "#282C34" }  # Green on Darkened backgr
 progress_error = { fg = "#E06C75", bg = "#282C34" }  # Red on Darkened background
 
 # Permissions
-permissions_t = { fg = "#98C379" }  # Green
-permissions_r = { fg = "#E06C75" }  # Red
-permissions_w = { fg = "#E5C07B" }  # Orange
-permissions_x = { fg = "#98C379" }  # Green
-permissions_s = { fg = "#ABB2BF" }  # Light gray
+perm_type = { fg = "#98C379" }  # Green
+perm_read = { fg = "#E06C75" }  # Red
+perm_write = { fg = "#E5C07B" }  # Orange
+perm_exec = { fg = "#98C379" }  # Green
+perm_sep = { fg = "#ABB2BF" }  # Light gray
 
 # : }}}
 
@@ -75,7 +84,7 @@ selected = { reversed = true }
 # : }}}
 
 # : Completion {{{
-[completion]
+[cmp]
 border = { fg = "#98C379" }  # Green
 
 # : }}}
